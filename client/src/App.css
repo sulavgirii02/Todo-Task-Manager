@@ -1,0 +1,23 @@
+/* =============================================
+   App.css - Main App Layout Styles
+   ============================================= */
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  background: var(--bg-main);
+  min-height: 100vh;
+  transition: margin-left var(--transition-normal);
+}
+
+/* ---- Mobile Responsive ---- */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
